@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="codemirror/codemirror.css" />
+    <link rel="stylesheet" href="codemirror/theme/darcula.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="codemirror/codemirror.js"></script>
+    <script src="codemirror/mode/meta.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://repl.it/lib/api.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+
+    <title>Code Editor</title>
+  </head>
+  <body>
+    <div id="loader" class="loader-container">
+      <div class="loader"></div>
+    </div>
+
+    <div class="code-editor">
+      <div class="code-editor__toolbar">
+        <button
+          class="code-editor__button code-editor__button--copy"
+          id="copyButton"
+        >
+          Copy
+        </button>
+        <button
+          class="code-editor__button code-editor__button--save"
+          id="saveAsButton"
+        >
+          Save
+        </button>
+        <button
+          class="code-editor__button code-editor__button--lock"
+          id="lockButton"
+        >
+          Lock
+        </button>
+        <button
+          class="code-editor__button code-editor__button--test"
+          id="testButton"
+        >
+          Compile & Run
+        </button>
+        <select
+          id="languageSelector"
+          class="code-editor__language-selector"
+        ></select>
+      </div>
+      <textarea id="codeArea"> </textarea>
+    </div>
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <span class="close" id="closePopup">&times;</span>
+        <h2>Compilation Result</h2>
+        <pre id="compilationResult"></pre>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
