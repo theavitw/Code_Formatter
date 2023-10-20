@@ -7,11 +7,11 @@ Made-up with HTML,CSS And Java-Script
 
 - [Installation](#installation)
 - [Usage](#usage)
-- For Coding In Different Languages
+  For Coding In Different Languages
 - [Contributing](#contributing)
-- One Can Contribute By Raaising Up THe issue
+  One Can Contribute By Raaising Up THe issue
 - [License](#license)
-- MIT
+  MIT
 
 ## Features
 - Save Code In Local System
